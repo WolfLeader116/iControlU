@@ -47,7 +47,7 @@ public class iControlU extends JavaPlugin {
 							if(!p.hasMetadata("iCU_H")){
 								if(victim != null){
 									if(!victim.hasMetadata("iCU_P")){
-										if(victim == p){
+										if(victim != p){
 											if(!(victim.hasPermission("icu.exempt"))){
 												victim.hidePlayer(p);
 												p.teleport(victim);
